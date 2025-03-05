@@ -22,24 +22,24 @@ let Tasks = () => {
 
   return (
     <div id="maintask">
-      <div id="home-1">
+      <div id="home-1" className="d-flex align-items-center justify-content-center w-auto h-auto">
         <Container id="btns">
           <Row>
-            <Col className="cols">
+            <Col className="cols mb-2 text-center" lg={4} md={12} xs={12}>
               <Link className="links" to={"/home"}>
                 <Button className="btns" variant="outline-primary">
                   Home
                 </Button>
               </Link>
             </Col>
-            <Col className="cols">
+            <Col className="cols mb-2 text-center" lg={4} md={12} xs={12}>
               <Link className="links" to="/tasks">
                 <Button className="btns" variant="outline-primary">
                   Tasks
                 </Button>
               </Link>
             </Col>
-            <Col className="cols">
+            <Col className="cols mb-2 text-center" lg={4} md={12} xs={12}>
               <Link className="links" to="/addtask">
                 <Button className="btns" variant="outline-primary">
                   Add Task
@@ -49,7 +49,7 @@ let Tasks = () => {
           </Row>
           <br />
           <Row>
-            <Col>
+            <Col className="text-center">
               <h3 style={{ textDecoration: "underline" }}>To-Do List</h3>
             </Col>
           </Row>
