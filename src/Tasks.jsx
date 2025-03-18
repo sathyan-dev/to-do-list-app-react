@@ -64,12 +64,13 @@ let Tasks = () => {
                   <div key={index}>
                     <Row>
                       <Stack direction="horizontal" gap={3} className="stack">
-                        <span
+                        <span contentEditable={true}
                           style={{
                             textDecoration: completedTasks[index]
                               ? "line-through"
                               : "none",
                             textAlign: "left",
+                            outline:"none"
                           }}
                         >
                           {index + 1}. {element.toUpperCase()}
